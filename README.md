@@ -1,4 +1,3 @@
----
 
 # Doctor UI Project
 
@@ -9,7 +8,6 @@ This repository contains:
 
 Follow the steps below to set up and run the project locally.
 
----
 
 ## 1. Prerequisites
 
