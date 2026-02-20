@@ -1,95 +1,95 @@
+---
+
 # Doctor UI Project
 
-This project contains:
+This repository contains:
 
-- Frontend (React.js)
-- Backend (Node.js / Express)
+* Frontend – React.js
+* Backend – Node.js / Express
 
-To run this project locally, follow the setup instructions below.
+Follow the steps below to set up and run the project locally.
 
 ---
 
 ## 1. Prerequisites
 
-You must install the following software:
+### Install Visual Studio Code
 
-### 1. Visual Studio Code (Code Editor)
-
-Download from:
-https://code.visualstudio.com/
-
-Install it according to your operating system.
+Download and install from:
+[https://code.visualstudio.com/](https://code.visualstudio.com/)
 
 ---
 
-### 2. Node.js and npm
+### Install Node.js (Includes npm)
 
-npm comes bundled with Node.js.
-
-Download Node.js (LTS version recommended):
-https://nodejs.org/
+Download the **LTS version** from:
+[https://nodejs.org/](https://nodejs.org/)
 
 After installation, verify:
 
+```bash
 node -v
 npm -v
+```
 
 Both commands should return version numbers.
 
 ---
 
-## 2. Project Setup
+## 2. Clone the Repository
 
-### Step 1: Clone the Repository
-
+```bash
 git clone <your-repository-url>
 cd doctor-ui
+```
+
+Replace `<your-repository-url>` with your actual GitHub repository link.
 
 ---
 
-### Step 2: Install Frontend Dependencies
+## 3. Install Dependencies
 
-From the root folder:
+### Install Frontend Dependencies (from root folder)
 
+```bash
 npm install
+```
 
----
+### Install Backend Dependencies
 
-### Step 3: Install Backend Dependencies
-
+```bash
 cd backend
 npm install
+```
 
 ---
 
-## 3. Running the Project
+## 4. Run the Application
 
-### Run Frontend
+### Start Frontend (from root folder)
 
-From root folder:
-
+```bash
 npm start
+```
 
----
+### Start Backend
 
-### Run Backend
-
+```bash
 cd backend
 npm start
+```
 
-(or use: npm run dev if configured)
+If your backend uses nodemon:
 
----
-
-## Notes
-
-- Ensure no other process is using the frontend or backend ports.
-- If you encounter dependency issues, delete node_modules and package-lock.json and reinstall.
+```bash
+npm run dev
+```
 
 ---
 
-Project Structure:
+## Project Structure
 
+```
 doctor-ui/
  ├── public/
  ├── src/
@@ -97,3 +97,29 @@ doctor-ui/
  ├── backend/
  │    ├── package.json
  │    └── ...
+```
+
+---
+
+## Troubleshooting
+
+If dependency installation fails:
+
+### Frontend
+
+```bash
+rm -rf node_modules package-lock.json
+npm install
+```
+
+### Backend
+
+```bash
+cd backend
+rm -rf node_modules package-lock.json
+npm install
+```
+
+---
+
+Anyone can now clone the repository, install dependencies, and run both frontend and backend locally.
