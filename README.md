@@ -37,11 +37,9 @@ Both commands should return version numbers.
 ## 2. Clone the Repository
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/srini130405/medicine_dispenser.git
 cd doctor-ui
 ```
-
-Replace `<your-repository-url>` with your actual GitHub repository link.
 
 ---
 
@@ -74,13 +72,7 @@ npm start
 
 ```bash
 cd backend
-npm start
-```
-
-If your backend uses nodemon:
-
-```bash
-npm run dev
+node server.js
 ```
 
 ---
