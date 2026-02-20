@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+# Doctor UI Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project contains:
 
-## Available Scripts
+- Frontend (React.js)
+- Backend (Node.js / Express)
 
-In the project directory, you can run:
+To run this project locally, follow the setup instructions below.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 1. Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+You must install the following software:
 
-### `npm test`
+### 1. Visual Studio Code (Code Editor)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Download from:
+https://code.visualstudio.com/
 
-### `npm run build`
+Install it according to your operating system.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 2. Node.js and npm
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+npm comes bundled with Node.js.
 
-### `npm run eject`
+Download Node.js (LTS version recommended):
+https://nodejs.org/
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+After installation, verify:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+node -v
+npm -v
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Both commands should return version numbers.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 2. Project Setup
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Step 1: Clone the Repository
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+git clone <your-repository-url>
+cd doctor-ui
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Step 2: Install Frontend Dependencies
 
-### Analyzing the Bundle Size
+From the root folder:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+npm install
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Step 3: Install Backend Dependencies
 
-### Advanced Configuration
+cd backend
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 3. Running the Project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Run Frontend
 
-### `npm run build` fails to minify
+From root folder:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+npm start
+
+---
+
+### Run Backend
+
+cd backend
+npm start
+
+(or use: npm run dev if configured)
+
+---
+
+## Notes
+
+- Ensure no other process is using the frontend or backend ports.
+- If you encounter dependency issues, delete node_modules and package-lock.json and reinstall.
+
+---
+
+Project Structure:
+
+doctor-ui/
+ ├── public/
+ ├── src/
+ ├── package.json
+ ├── backend/
+ │    ├── package.json
+ │    └── ...
