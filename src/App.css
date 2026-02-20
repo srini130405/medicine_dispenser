@@ -36,3 +36,43 @@
     transform: rotate(360deg);
   }
 }
+
+/* Time-of-day grid */
+.time-grid {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.time-grid div {
+  flex: 1;
+  background: #f1f5f9;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.time-grid input {
+  margin-top: 6px;
+  text-align: center;
+}
+
+/* Dropdown */
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  margin-bottom: 12px;
+}
+
+/* Notes */
+textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  resize: vertical;
+}
